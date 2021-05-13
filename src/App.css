@@ -2,17 +2,30 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 img {
-  border: 2px solid white;
+  border: 3px double #00000090;
   height: 200px;
   width: 200px;
   border-radius: 50%;
 }
 
+a {
+  padding: 25px 0;
+  text-align: center;
+  /*background-color: #000;*/
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+a:hover {
+
+}
+
 .homeSection {
-  background-image: url('./astronomy.jpg');
+  background-image: url('./background-green.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,15 +35,30 @@ img {
 }
 
 .mainMenu {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
 
+.navItems {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
 }
 
 .menuBtn {
-  margin: 15px 0 0 25px;
+  margin: 15px 0 0 20px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
+  border-color: #00000030;
+  background: #104040;
+  color: whitesmoke;
   font-size: calc(20px + 2vmin);
+}
+
+.menuBtn:hover {
+  background-color: whitesmoke;
+  color: #000000
 }
 
 .intro {
@@ -47,7 +75,14 @@ img {
   padding-bottom: 5px;
   font-size: calc(30px + 2vmin);
   transform: rotate(90deg);
+  color: whitesmoke;
   background: transparent;
   border: none;
+  animation: 2s mymove infinite;
+}
+
+@keyframes mymove {
+  from {color: whitesmoke;}
+  to {color: #49A68B;}
 }
 

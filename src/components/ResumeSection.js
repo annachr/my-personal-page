@@ -1,10 +1,10 @@
 import React from 'react'
 
-const MainSection = () => {
+const ResumeSection = () => {
   return (
     <>
     </>
   )
 }
 
-export default MainSection
+export default ResumeSection
