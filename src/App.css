@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  border: 2px solid white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeSection {
+  background-image: url('./astronomy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.mainMenu {
+
+}
+
+.menuBtn {
+  margin: 15px 0 0 25px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  font-size: calc(20px + 2vmin);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.arrowBtn {
+  padding-bottom: 5px;
+  font-size: calc(30px + 2vmin);
+  transform: rotate(90deg);
+  background: transparent;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
