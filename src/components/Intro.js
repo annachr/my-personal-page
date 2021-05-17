@@ -2,11 +2,10 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className='intro'>
-      <img src='../marguerite.jpg' alt='my photo'/>
-      <h2>Some text</h2>
+        <div className='intro'>
+          <img src='../static/marguerite.jpg' alt='my photo' className='myPhoto'/>
 
-    </div>
+        </div>
   )
 }
 

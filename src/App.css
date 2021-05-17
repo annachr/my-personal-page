@@ -3,40 +3,49 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+
 }
 
-img {
-  border: 3px double #00000090;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
+:root {
+  --background-accent-theme: url('./static/background-green.jpg')
+}
+
+body {
+  background-color: #E2E2E2;
 }
 
 a {
   padding: 25px 0;
   text-align: center;
-  /*background-color: #000;*/
   text-decoration: none;
   color: whitesmoke;
 }
 
-a:hover {
-
+h3 {
+  padding: 8px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 .homeSection {
-  background-image: url('./background-green.jpg');
+  height: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  background-image: var(--background-accent-theme);
 }
 
 .mainMenu {
   display: grid;
   grid-template-columns: 1fr 4fr;
+
+}
+
+.overlay {
+  display: none;
 }
 
 .navItems {
@@ -61,28 +70,91 @@ a:hover {
   color: #000000
 }
 
+.myPhoto {
+  border: 3px double #00000090;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+}
+
 .intro {
-  display: flex;
+  display: inline-grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
-  padding-bottom: 50px;
+  position: absolute;
+  bottom: -50%
+}
+
+.main {
+  margin-top: 100px;
+}
+
+.section {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 10vh;
+}
+
+.sectionHeader {
+  padding-bottom: 10px;
+
+}
+
+.galleryImg {
+  width: 100%;
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: var(--background-accent-theme);
 }
 
 
-.arrowBtn {
-  padding-bottom: 5px;
-  font-size: calc(30px + 2vmin);
-  transform: rotate(90deg);
-  color: whitesmoke;
-  background: transparent;
-  border: none;
-  animation: 2s mymove infinite;
+@media(min-width: 480px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+  }
 }
 
-@keyframes mymove {
-  from {color: whitesmoke;}
-  to {color: #49A68B;}
+@media(min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .section {
+    width: 70%;
+  }
 }
+
+@media(min-width: 992px) {
+  .section {
+    width: 60%;
+  }
+}
+
+
+/*.arrowBtn {*/
+/*  padding-bottom: 5px;*/
+/*  font-size: calc(30px + 2vmin);*/
+/*  transform: rotate(90deg);*/
+/*  color: whitesmoke;*/
+/*  background: transparent;*/
+/*  border: none;*/
+/*  animation: 2s mymove infinite;*/
+/*}*/
+
+/*@keyframes mymove {*/
+/*  from {color: whitesmoke;}*/
+/*  to {color: #49A68B;}*/
+/*}*/
 

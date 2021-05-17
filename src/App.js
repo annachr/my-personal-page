@@ -1,13 +1,15 @@
 import React from 'react'
 import './App.css';
 import HomeSection from './components/HomeSection'
-import ResumeSection from './components/ResumeSection'
+import Main from './components/Main'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
       <HomeSection />
-      <ResumeSection />
+      <Main />
+      <Footer />
     </div>
   );
 }

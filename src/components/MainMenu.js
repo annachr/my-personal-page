@@ -6,10 +6,10 @@ const MainMenu = () => {
       <button className='menuBtn'>≋</button>
       <div className='overlay'>
         <nav className='navItems'>
-          <a href='#'>Home</a>
-          <a href='#'>Resume</a>
-          <a href='#'>Projects</a>
-          <a href='#'>Contact</a>
+          <a href='#'>HOME</a>
+          <a href='#'>RESUME</a>
+          <a href='#'>PROJECTS</a>
+          <a href='#'>CONTACT</a>
         </nav>
       </div>
     </div>
