@@ -1,11 +1,13 @@
 import React from 'react'
+import photo from '../static/marguerite.jpg'
 
 const Intro = () => {
   return (
-        <div className='intro'>
-          <img src='../static/marguerite.jpg' alt='my photo' className='myPhoto'/>
-
-        </div>
+    <div className='intro'>
+      <div className='introPhoto'>
+        <img src={photo} alt='my photo' className='myPhoto'/>
+      </div>
+    </div>
   )
 }
 

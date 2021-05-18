@@ -1,9 +1,12 @@
 import React from 'react'
+import githubIcon from '../static/github-icon.svg'
+import linkedIn from '../static/linkedIn-icon.svg'
 
 const Footer = () => {
   return (
     <div className='footer'>
-      <img className='./static/githubIcon.png' src='../github.png' alt='github icon'/>
+      <img className='github icon' src={githubIcon} alt='github icon'/>
+      <img className='linkedin icon' src={linkedIn} alt='linkedIn icon'/>
     </div>
   )
 }

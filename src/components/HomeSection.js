@@ -4,11 +4,11 @@ import Intro from './Intro'
 
 const HomeSection = () => {
   return (
-      <section className='homeSection'>
+      <header className='homeSection'>
         <MainMenu />
         <Intro />
         {/*<button className='arrowBtn'>»</button>*/}
-      </section>
+      </header>
   )
 }
 

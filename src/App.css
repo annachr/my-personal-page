@@ -7,11 +7,18 @@
 }
 
 :root {
-  --background-accent-theme: url('./static/background-green.jpg')
+  --background-accent-theme: url('./static/background-green.jpg');
+  --background-main-theme: #E2E2E2;
 }
 
 body {
-  background-color: #E2E2E2;
+  background-color: var(--background-main-theme);
+}
+
+section {
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 10vh;
 }
 
 a {
@@ -27,9 +34,14 @@ h3 {
   font-weight: lighter;
 }
 
+h4 {
+  font-weight: lighter;
+}
+
 .homeSection {
   height: 20vh;
   position: relative;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
@@ -76,10 +88,11 @@ h3 {
   width: 120px;
   border-radius: 50%;
   background-color: whitesmoke;
+  position: relative;
 }
 
-.intro {
-  display: inline-grid;
+.introPhoto {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -89,19 +102,15 @@ h3 {
   bottom: -50%
 }
 
-.main {
-  margin-top: 100px;
+.about {
+  padding-bottom: 30px;
+  text-align: center;
 }
 
-.section {
-  width: 75%;
-  margin: 0 auto;
-  padding-bottom: 10vh;
-}
+
 
 .sectionHeader {
   padding-bottom: 10px;
-
 }
 
 .galleryImg {
@@ -111,11 +120,24 @@ h3 {
 .footer {
   height: 10vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: var(--background-accent-theme);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: var(--background-main-theme);
+}
+
+.github {
+  border: 1.5px solid var(--background-main-theme);
 }
 
 

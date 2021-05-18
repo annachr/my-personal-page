@@ -4,10 +4,10 @@ import ResumeSection from './ResumeSection'
 
 const Main = () => {
   return(
-    <div className='main'>
+    <main>
       <ProjectsSection />
       <ResumeSection />
-    </div>
+    </main>
   )
 }
 
