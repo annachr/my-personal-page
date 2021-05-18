@@ -4,10 +4,10 @@ import linkedIn from '../static/linkedIn-icon.svg'
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <footer>
       <img className='github icon' src={githubIcon} alt='github icon'/>
       <img className='linkedin icon' src={linkedIn} alt='linkedIn icon'/>
-    </div>
+    </footer>
   )
 }
 

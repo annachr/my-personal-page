@@ -10,12 +10,12 @@ const ProjectsSection = () => {
         <hr/>
       </div>
       <div className='gallery'>
-        <img className='galleryImg' src='http://placecorgi.com/150/100'/>
-        <img className='galleryImg' src='http://placecorgi.com/150/100'/>
-        <img className='galleryImg' src='http://placecorgi.com/150/100'/>
-        <img className='galleryImg' src='http://placecorgi.com/150/100'/>
-        <img className='galleryImg' src='http://placecorgi.com/150/100'/>
-        <img className='galleryImg' src='http://placecorgi.com/150/100'/>
+        <img className='galleryImg' src='http://placecorgi.com/150/100' />
+        <img className='galleryImg' src='http://placecorgi.com/150/100' />
+        <img className='galleryImg' src='http://placecorgi.com/150/100' />
+        <img className='galleryImg' src='http://placecorgi.com/150/100' />
+        <img className='galleryImg' src='http://placecorgi.com/150/100' />
+        <img className='galleryImg' src='http://placecorgi.com/150/100' />
       </div>
     </section>
   )
