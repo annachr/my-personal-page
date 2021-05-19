@@ -1,6 +1,10 @@
 import React from 'react'
+import Experience from './Experience'
+import Courses from './Courses'
+import Education from './Education'
 
 const ResumeSection = () => {
+
   return (
     <section className='resume'>
       <div className='sectionHeader'>
@@ -9,12 +13,10 @@ const ResumeSection = () => {
         <hr/>
       </div>
       <div className='features'>
-        <h4>EDUCATION</h4>
-        <h4>EXPERIENCE</h4>
-        <h4>LANGUAGES</h4>
+        <Experience />
+        <Courses />
+        <Education />
       </div>
-
-
     </section>
   )
 }

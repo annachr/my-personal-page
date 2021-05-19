@@ -8,7 +8,7 @@
 
 :root {
   --background-accent-theme: url('./static/background-green.jpg');
-  --background-main-theme: #E2E2E2;
+  --background-main-theme: #EEEEEE;
 }
 
 body {
@@ -151,6 +151,10 @@ footer {
 
 .github {
   border: 1.5px solid var(--background-main-theme);
+}
+
+.text {
+  display: none;
 }
 
 
