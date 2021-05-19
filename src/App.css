@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
 
 }
 
@@ -28,20 +29,18 @@ a {
   color: whitesmoke;
 }
 
-h3 {
+h2 {
   padding: 8px;
   text-align: center;
-  font-weight: lighter;
 }
 
-h4 {
+h3 {
   padding: 15px;
   width: 100%;
-  font-weight: lighter;
   text-align: center;
 }
 
-h4:hover {
+h3:hover {
   background-color: #4F9692;
   color: whitesmoke;
   transition: .5s ease-in-out;
@@ -151,10 +150,6 @@ footer {
 
 .github {
   border: 1.5px solid var(--background-main-theme);
-}
-
-.text {
-  display: none;
 }
 
 
