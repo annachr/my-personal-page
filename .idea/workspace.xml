@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97f2d5be-d5a9-4160-b267-4ed2380ea03e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HomeSection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Intro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainMenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResumeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResumeSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="copyright.filetypes.SCSS" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ania\WebstormProjects\my_page\src\redux" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -67,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620731245853</updated>
       <workItem from="1620731247606" duration="37749000" />
-      <workItem from="1621243245315" duration="41575000" />
+      <workItem from="1621243245315" duration="48800000" />
     </task>
     <servers />
   </component>
