@@ -4,7 +4,7 @@ const ProjectsSection = () => {
   return (
     <section className='projects'>
       <div className='sectionHeader'>
-        <h2>PROJECTS</h2>
+        <h2>Projects</h2>
       </div>
       <div className='gallery'>
         <img className='galleryImg' src='http://placecorgi.com/150/100' />
