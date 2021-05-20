@@ -9,7 +9,7 @@ const Features = (props) => {
   return (
     <div>
       <h3 onClick={handleDisplay}>{props.header}</h3>
-      <div style={{display: display ? 'block' : 'none'}}>{props.content}</div>
+      <div style={{display: display ? 'block' : 'none'}} className='resumeData'>{props.content}</div>
     </div>
   )
 }
