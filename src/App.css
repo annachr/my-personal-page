@@ -63,6 +63,15 @@ header {
   box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
+.projectLink {
+  height: 100%;
+  border: none;
+}
+
+.projectLink:hover {
+  cursor: pointer;
+}
+
 footer {
   height: 100%;
   padding: 10px 20px;
@@ -98,15 +107,15 @@ footer {
 .gallery {
   display: grid;
   grid-gap: 15px;
-
 }
 
 .galleryImg {
   width: 100%;
   height: 100%;
-  box-shadow: 5px 5px 5px 0 #777, inset 4px 4px 15px 0 #777, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 3px 3px 3px 0 #999;
   border-radius: 3px;
 }
+
 
 .features {
   display: grid;
@@ -120,26 +129,22 @@ footer {
   border: 1.5px solid var(--background-main-theme);
 }
 
-/*.modal {*/
-/*  background-color: white;*/
-/*  max-width: 600px;*/
-/*  margin: 0 auto;*/
-/*  padding: 20px;*/
-/*  position: relative;*/
-/*  top: 0;*/
-/*  box-shadow: 2px 5px 16px 0 #0B325E*/
-/*}*/
-/*.overlay {*/
-/*  display: none;*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  background-color: rgba(0, 0, 0, 0.4);*/
-/*}*/
+.overlay {
+  position: relative;
+}
 
+.modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 8px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: smaller;
+  background-color: black;
+  opacity: 80%;
+  color: var(--background-main-theme);
+}
 
 @media(min-width: 480px) {
   .gallery {

@@ -5,13 +5,13 @@ import resumeData from '../resumeData'
 const ResumeSection = () => {
   const {experience, courses, education} = resumeData
   const experienceList = experience.map(item =>
-      <p>{item.from}-{item.to} {item.company}{item.position}</p>
+      <p key={`${item.from}${item.to}`}>{item.from}-{item.to} {item.company}{item.position}</p>
   )
   const coursesList = courses.map(item =>
-      <p>{item.year} {item.courseName}</p>
+      <p key={item.year}>{item.year} {item.courseName}</p>
   )
   const educationList = education.map(item =>
-      <p>{item.from}-{item.to} {item.school.name} {item.school.faculty}</p>
+      <p key={item.school.name}>{item.from}-{item.to} {item.school.name} {item.school.faculty}</p>
   )
 
 
