@@ -49,6 +49,12 @@ h3:hover {
   transition: .5s ease-in-out;
 }
 
+.active {
+  background-color: var(--text-accent-color);
+  color: whitesmoke;
+  transition: .5s ease-in-out;
+}
+
 header {
   height: 15vh;
   width: 100%;
@@ -61,15 +67,6 @@ header {
   font-family: 'Dancing Script', cursive;
   color: var(--text-accent-color);
   box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-}
-
-.projectLink {
-  height: 100%;
-  border: none;
-}
-
-.projectLink:hover {
-  cursor: pointer;
 }
 
 footer {
@@ -90,6 +87,10 @@ footer {
   margin: 0 5px;
   border-radius: 50%;
   background-color: var(--background-main-theme);
+}
+
+.github {
+  border: 1.5px solid var(--background-main-theme);
 }
 
 .about {
@@ -116,6 +117,18 @@ footer {
   border-radius: 3px;
 }
 
+.projectLink {
+  height: 100%;
+  border: none;
+}
+
+.projectLink:hover {
+  cursor: pointer;
+}
+
+.feature {
+  margin-bottom: 10px;
+}
 
 .features {
   display: grid;
@@ -123,10 +136,7 @@ footer {
 
 .resumeData {
   padding-left: 25px;
-}
-
-.github {
-  border: 1.5px solid var(--background-main-theme);
+  padding-top: 10px
 }
 
 .overlay {
