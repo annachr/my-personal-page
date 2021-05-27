@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-  padding: 10px;
+  padding: 8px;
   width: 100%;
   border-radius: 5px;
 }
@@ -44,12 +44,6 @@ h2, h3 {
 }
 
 h3:hover {
-  background-color: var(--text-accent-color);
-  color: whitesmoke;
-  transition: .5s ease-in-out;
-}
-
-.active {
   background-color: var(--text-accent-color);
   color: whitesmoke;
   transition: .5s ease-in-out;
@@ -66,7 +60,7 @@ header {
   background: var(--background-accent-theme);
   font-family: 'Dancing Script', cursive;
   color: var(--text-accent-color);
-  box-shadow: 5px 5px 5px 0 #000000, inset 4px 4px 15px 0 #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 0 0 5px 5px #000000;
 }
 
 footer {
@@ -74,7 +68,8 @@ footer {
   padding: 10px 20px;
   font-size: 12px;
   background: var(--background-accent-theme);
-  color: var(--text-accent-color)
+  color: var(--text-accent-color);
+  box-shadow: 0 1px 5px 5px #000000;
 }
 
 .socialIcons {
@@ -87,6 +82,10 @@ footer {
   margin: 0 5px;
   border-radius: 50%;
   background-color: var(--background-main-theme);
+}
+
+.icon:hover {
+  box-shadow: 0 0 6px 2px #fff;
 }
 
 .github {
@@ -107,7 +106,8 @@ footer {
 }
 .gallery {
   display: grid;
-  grid-gap: 15px;
+  grid-gap: 20px;
+  padding: 10px
 }
 
 .galleryImg {
@@ -124,19 +124,6 @@ footer {
 
 .projectLink:hover {
   cursor: pointer;
-}
-
-.feature {
-  margin-bottom: 10px;
-}
-
-.features {
-  display: grid;
-}
-
-.resumeData {
-  padding-left: 25px;
-  padding-top: 10px
 }
 
 .overlay {
@@ -156,23 +143,34 @@ footer {
   color: var(--background-main-theme);
 }
 
+.feature {
+  margin-bottom: 10px;
+}
+
+.features {
+  display: grid;
+}
+
+.resumeData {
+  padding-left: 12px;
+  margin: 15px 10px;
+  line-height: 1.6;
+  border-left: 1px solid black;
+}
+
+.active {
+  background-color: var(--text-accent-color);
+  color: whitesmoke;
+  transition: .5s ease-in-out;
+}
+
 @media(min-width: 480px) {
   .gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-  }
-
-  .features {
-    flex-direction: row;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
 @media(min-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .section {
     width: 70%;
   }

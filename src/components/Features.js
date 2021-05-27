@@ -5,7 +5,7 @@ const Features = (props) => {
   const [headerActive, setHeaderActive] = useState('')
   function handleDisplay() {
     setDisplay(!display)
-    !display ? setHeaderActive('active') : setHeaderActive('')
+    display ? setHeaderActive('') : setHeaderActive('active')
   }
 
   return (
